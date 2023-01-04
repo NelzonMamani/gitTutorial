@@ -24,7 +24,8 @@ git status
 
 $ git init
 Initialized empty Git repository in C:/Users/Nelzon/gitTutorial/.git/
-
+ 
+$ git add gitNOTEs.txt
 $ git commit -m "my first commit"
 
 
@@ -123,5 +124,4 @@ Main Porcelain Commands
 
 
 
-
-
+:)
