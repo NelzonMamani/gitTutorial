@@ -26,8 +26,78 @@ $ git init
 Initialized empty Git repository in C:/Users/Nelzon/gitTutorial/.git/
  
 $ git add gitNOTEs.txt
-$ git commit -m "my first commit"
+$ git commit -m "my first commit" // m for message
 
+$ git log
+$ git diff // difference between working and staging area
+$ git diff --staged
+
+$ git rm --cached gitNOTEs.txt //removed from repository NOT from working area
+$ git logged --oneline  
+
+	BRANCH
+$ git branch
+* master
+
+$ git branch newBranch
+$ git checkout newBranch //change to newBranch
+Switched to branch 'newBranch'
+
+$ touch anotherFile.txt
+$ git add -A
+$ git commit -m "Adding a file anotherFile.txt to newBranch"
+$ git status
+On branch newBranch
+nothing to commit, working tree clean
+$ git checkout master
+Switched to branch 'master'
+
+$ git branch -D newBranch   // you can delete newBranch from MASTER only
+Deleted branch newBranch (was b7f7913).
+$ git merge anotherBranch   // you can merge anotherBranch from MASTER only
+
+
+GITHUB 
+
+$ git remote add origin https://github.com/NelzonMamani/gitTutorial.git
+$ git branch -M main
+$ git push -u origin main
+
+
+
+
+
+
+
+
+
+
+
+
+GITHUB
+…or create a new repository on the command line
+echo "# gitTutorial" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/NelzonMamani/gitTutorial.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/NelzonMamani/gitTutorial.git
+git branch -M main
+git push -u origin main
+
+
+
+
+
+
+
+
+git add -A stages all changes
+git add . stages new files and modifications, without deletions (on the current directory and its subdirectories).
+git add -u stages modifications and deletions, without new files
 
 
 
@@ -123,4 +193,6 @@ Main Porcelain Commands
 
 
 
- 
+
+
+
