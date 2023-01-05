@@ -1,28 +1,32 @@
-GIT GITHUB
-https://git-scm.com/download/win
+# gitTutorial
 
-Git is a free and open source distributed version control system  
+GIT GITHUB NOTES
+https://git-scm.com/download/win
+Git is a free and open source distributed version control system.
 
 git bush in windows
 
 mkdir gitTutorial
-cd gitTutorial
+cd gitTutorial // change directory to gitTutorial   // <===
 touch index2.html
 notepad index2.html
 cd ..
-code .
+code . // opens VSCode
 
 git -v
 git help
 git help -a
 q //for quitting
+$ git help --config
 
-$ git config --global user.name Nelzon
-$ git config --global user.email nelzonm@gmail.com
+
+$ git config --global user.name Nelzon              // <=== 
+$ git config --global user.email nelzonm@gmail.com  // <=== 
 
 git status
 
-$ git init
+echo "# gitTutorial" >> README.md                   // <=== 
+$ git init                                          // <===
 Initialized empty Git repository in C:/Users/Nelzon/gitTutorial/.git/
  
 $ git add gitNOTEs.txt
@@ -37,61 +41,51 @@ $ git logged --oneline
 
 	BRANCH
 $ git branch
-* master
+* main
 
 $ git branch newBranch
 $ git checkout newBranch //change to newBranch
 Switched to branch 'newBranch'
 
 $ touch anotherFile.txt
-$ git add -A
-$ git commit -m "Adding a file anotherFile.txt to newBranch"
+$ git add -A                                        // <===
+$ git commit -m "Adding a file anotherFile.txt to newBranch"    // <===
 $ git status
 On branch newBranch
 nothing to commit, working tree clean
-$ git checkout master
-Switched to branch 'master'
+$ git checkout main
+Switched to branch 'main'
 
-$ git branch -D newBranch   // you can delete newBranch from MASTER only
+$ git branch -D newBranch   // you can delete newBranch from main only
 Deleted branch newBranch (was b7f7913).
-$ git merge anotherBranch   // you can merge anotherBranch from MASTER only
+$ git merge anotherBranch   // you can merge anotherBranch from main only
+
+
+
 
 
 GITHUB 
 
-$ git remote add origin https://github.com/NelzonMamani/gitTutorial.git
-$ git branch -M main
-$ git push -u origin main
+$ git remote add origin https://github.com/NelzonMamani/gitTutorial.git     // <===
+$ git branch -M main                                                        // <===
+$ git push -u origin main                                                   // <===
 
 
+FROM GITHUB SUPPER IMPORTANT
 
-
-
-
-
-
-
-
-
-
-GITHUB
 …or create a new repository on the command line
 echo "# gitTutorial" >> README.md
 git init
-git add README.md
+git add README.md                                       // <=== $ git add -A   
 git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/NelzonMamani/gitTutorial.git
 git push -u origin main
+
 …or push an existing repository from the command line
 git remote add origin https://github.com/NelzonMamani/gitTutorial.git
 git branch -M main
 git push -u origin main
-
-
-
-
-
 
 
 
